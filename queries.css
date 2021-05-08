@@ -1,0 +1,243 @@
+/********** Everything under 320px **********/
+@media only screen and (max-width: 320px) {
+  .homeLanding {
+    background-position: 40%;
+  }
+  /* .promoWrap {
+    padding: 50px 5px;
+  } */
+  .sectionTitle1 img {
+    height: 80px;
+    width: auto;
+  }
+  .swiper-container {
+    padding: 25px 0;
+  }
+  /* #media {
+    padding-top: 6em;
+  } */
+  .instaOuter div a {
+    width: 125px;
+    height: 175px;
+  }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .aboutTextWrapper {
+    padding: 1.5em 0 3.5em;
+    margin-bottom: 20px;
+  }
+  .sectionTitle1 img {
+    height: 80px;
+    width: auto;
+  }
+  .contactTitle {
+    top: 5px;
+    right: -20px;
+  }
+  .contactWrapper::before {
+    height: 90px;
+  }
+}
+/*************** Point when burger menu goes away and full-screen menu appears ***************/
+@media only screen and (min-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #navList {
+    display: none;
+  }
+  nav .burgerOpen {
+    top: -100px;
+  }
+  nav .fullNavList {
+    display: flex;
+  }
+  .homeLanding {
+    height: 66vh;
+  }
+  .promoWrap {
+    justify-content: space-evenly;
+  }
+  .promo {
+    height: 175px;
+    width: 175px;
+  }
+  .sectionTitle1 img {
+    height: 120px;
+    width: auto;
+  }
+  .aboutTextWrapper {
+    padding-top: 3em;
+    padding-right: 4em;
+    padding-left: 4em;
+  }
+  .instaOuter div a {
+    width: 200px;
+    height: 250px;
+  }
+  .instaOuter div a:last-of-type {
+    display: block;
+  }
+  .mediaVid {
+    height: 275px;
+  }
+  .swiper-slide {
+    width: 260px;
+    height: 260px;
+  }
+  footer img {
+    height: 60px;
+  }
+  .footerText {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .homeLanding {
+    height: 80vh;
+  }
+  .promoWrap {
+    justify-content: space-around;
+    border: 3px solid rgba(0, 0, 0, 0.76);
+    border-radius: 10px;
+  }
+  .promo {
+    height: 200px;
+    width: 200px;
+  }
+  .aboutTextWrapper {
+    padding-top: 10em;
+    padding-bottom: 12em;
+  }
+  .aboutTextInner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+  .aboutTextInner p {
+    display: inline-block;
+    padding: 0 2vmin;
+  }
+  .instaOuter div a {
+    width: 200px;
+    height: 250px;
+    margin: 24px;
+  }
+  .swiper-slide {
+    width: 300px;
+    height: 300px;
+  }
+
+  footer img {
+    height: 75px;
+    margin: 14px 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .homeLanding {
+    aspect-ratio: 16 / 9;
+    background-position: center 40%;
+  }
+  .promoWrap {
+    justify-content: space-evenly;
+  }
+  .sectionTitle1 img {
+    height: 130px;
+    width: auto;
+  }
+  .instaOuter div a {
+    margin: 30px;
+    width: 250px;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  footer {
+    margin: 0;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 60%;
+    /* background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.1),
+      transparent
+    ); */
+  }
+  .footerSocial {
+    /* display: none; */
+    border: none;
+  }
+}
+
+/*************** Latest Contact section(add into already existing queries) ***************/
+@media only screen and (max-width: 1200px) {
+  .contactContent {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(0);
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactRight {
+    transform: rotate(0);
+  }
+  .contactContent::after {
+    content: "";
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    background: #dedede;
+  }
+  .contactSocial {
+    width: 100%;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contactRight .contactInner {
+    max-width: 685px;
+    text-align: center;
+    background: #000;
+    padding: 0 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  }
+  .contactContent::before {
+    content: "";
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    left: 10px;
+    background: #dedede;
+  }
+  .contactContent::after {
+    content: "";
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    right: 10px;
+    background: #dedede;
+  }
+}
