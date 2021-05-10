@@ -1,5 +1,6 @@
 // gsap.registerPlugin(CSSRulePlugin);
 // Burger Menu
+
 const burgerOpen = document.querySelector(".burgerOpen");
 const burgerClose = document.querySelector(".burgerClose");
 const navList = document.querySelector("#navList");
