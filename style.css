@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Nunito:wght@200;400&family=Quattrocento+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Nunito:wght@200;400&family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -92,7 +92,7 @@ nav .navLogo {
 #navList ul li a {
   position: relative;
   padding: 0 3px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1.5rem;
   letter-spacing: 1.8px;
   transition: all 0.3s ease;
@@ -101,7 +101,7 @@ nav .navLogo {
 /* Gotta figure out something */
 
 nav ul li a::before {
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   position: absolute;
@@ -156,7 +156,7 @@ nav .fullNavList li {
 }
 nav .fullNavList li a {
   position: relative;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1.1rem;
   letter-spacing: 1.6px;
   text-shadow: 0 1px 1px #000, -2px 1px 1px #000, 0 0 1px #000;
@@ -172,6 +172,9 @@ nav .fullNavList li a {
   padding-bottom: 4em;
   position: relative;
   background-image: url(img/landing1.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: 40% 50%;
   background-attachment: fixed;
@@ -181,7 +184,7 @@ nav .fullNavList li a {
 }
 
 .mainLanding::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -197,7 +200,7 @@ nav .fullNavList li a {
   );
 }
 .mainLanding::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -213,7 +216,7 @@ nav .fullNavList li a {
   max-width: 210px;
   position: relative;
   z-index: 1;
-  font-family: "Rokkitt";
+  font-family: 'Rokkitt';
   font-weight: 400;
   color: #fff;
   overflow: hidden;
@@ -222,7 +225,7 @@ nav .fullNavList li a {
 }
 
 .card::before {
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   position: absolute;
@@ -238,7 +241,7 @@ nav .fullNavList li a {
 }
 
 .card::after {
-  content: "";
+  content: '';
   display: block;
   padding-bottom: 100%;
 }
@@ -293,7 +296,7 @@ nav .fullNavList li a {
   text-shadow: 0 0 1px #000, 1px 1px 1px #000, -1px -1px 1px #000;
 }
 .cardTitle::before {
-  content: "";
+  content: '';
   height: 3px;
   width: 105%;
   position: absolute;
@@ -341,7 +344,7 @@ nav .fullNavList li a {
 }
 
 .musicWrap::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -353,7 +356,7 @@ nav .fullNavList li a {
   filter: blur(8px);
 }
 .musicWrap::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 80px;
   left: 0;
@@ -418,7 +421,7 @@ nav .fullNavList li a {
   border: 1px solid #000;
   background-color: #000;
   color: #dedede;
-  font-family: "Rokkitt", serif;
+  font-family: 'Rokkitt', serif;
   font-weight: 200;
   letter-spacing: 1.6px;
   font-size: 1.25rem;
@@ -459,7 +462,7 @@ nav .fullNavList li a {
 }
 
 .aboutContent::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 10px;
   left: 0;
@@ -495,7 +498,7 @@ nav .fullNavList li a {
 }
 
 .aboutTextWrapper::before {
-  content: "";
+  content: '';
   height: 3px;
   width: 100%;
   position: absolute;
@@ -526,7 +529,7 @@ nav .fullNavList li a {
 .aboutTextInner p {
   position: relative;
   z-index: 2;
-  font-family: "Rokkitt", serif;
+  font-family: 'Rokkitt', serif;
   font-weight: 200;
   font-size: 1.06rem;
   color: #000;
@@ -566,7 +569,7 @@ nav .fullNavList li a {
   overflow: hidden;
 }
 .mediaVid::before {
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   position: absolute;
@@ -590,7 +593,7 @@ nav .fullNavList li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Rokkitt", serif;
+  font-family: 'Rokkitt', serif;
   font-weight: 400;
   font-size: 1.3rem;
   background-color: rgba(0, 0, 0, 0.76);
@@ -630,7 +633,7 @@ nav .fullNavList li a {
   padding: 5px 0;
   margin-bottom: 1em;
   text-align: center;
-  font-family: "Cinzel";
+  font-family: 'Cinzel';
   font-size: 1.75rem;
   color: rgba(222, 222, 222, 0.8);
   letter-spacing: 1.8px;
@@ -640,7 +643,7 @@ nav .fullNavList li a {
   text-decoration-color: rgba(164, 22, 26, 1); */
 }
 .instaOuter h2::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 44%;
   left: 0;
@@ -650,7 +653,7 @@ nav .fullNavList li a {
   border-radius: 2%;
 }
 .instaOuter h2::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 44%;
   right: 0;
@@ -715,7 +718,7 @@ nav .fullNavList li a {
 }
 
 .contactWrapper::before {
-  content: "";
+  content: '';
   height: 130px;
   width: 100%;
   position: absolute;
@@ -742,7 +745,7 @@ nav .fullNavList li a {
 }
 
 .imgWrap::after {
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   position: absolute;
@@ -774,7 +777,7 @@ nav .fullNavList li a {
 }
 
 .contactContent::before {
-  content: "";
+  content: '';
   height: 100%;
   width: 20px;
   position: absolute;
@@ -850,7 +853,7 @@ textarea::placeholder {
   outline: none;
   text-transform: uppercase;
   color: #dedede;
-  font-family: "Rokkitt", serif;
+  font-family: 'Rokkitt', serif;
   font-weight: 400;
   letter-spacing: 1.6px;
   cursor: pointer;
@@ -911,7 +914,7 @@ footer img {
 
 .footerText {
   width: 100%;
-  font-family: "Rokkitt", serif;
+  font-family: 'Rokkitt', serif;
   font-weight: 200;
   font-size: 14px;
   letter-spacing: 1.4px;
