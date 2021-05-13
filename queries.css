@@ -19,7 +19,7 @@
     height: 175px;
   }
 }
-@media only screen and (orientation: landscape) {
+@media (max-width: 425px) and (orientation: landscape) {
   .mainLanding,
   .aboutLanding {
     background-attachment: scroll;
