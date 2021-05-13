@@ -109,10 +109,6 @@
     border: 3px solid rgba(0, 0, 0, 0.76);
     border-radius: 10px;
   }
-  .promo {
-    height: 200px;
-    width: 200px;
-  }
   .aboutTextWrapper {
     padding-top: 10em;
     padding-bottom: 12em;
@@ -242,3 +238,22 @@
     background: #dedede;
   }
 }
+
+@media (max-width: 896px) and (orientation: landscape) {
+  .card {
+    height: 125px;
+    width: 125px;
+  }
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+  .cardLinks {
+    padding-top: 0.75em;
+  }
+  .promoLink {
+    font-size: 0.9rem;
+  }
+}
+/***************  *****************/
+/* 785px responsive cards(height/width) are too small  */
+/***************  *****************/

@@ -32,7 +32,13 @@ burgerClose.addEventListener('click', () => {
   navList.style.transform = 'translateX(-300%)'
   burgerClose.style.display = 'none'
   burgerOpen.style.transform = 'scale(1)'
-  gsap.to('.navLogo', { scale: '1', x: '0', y: '0' })
+  gsap.to('.navLogo', {
+    duration: 0,
+    scale: '1',
+    x: '0',
+    y: '0',
+    ease: 'power1.in',
+  })
 })
 
 window.addEventListener('keydown', function (event) {
