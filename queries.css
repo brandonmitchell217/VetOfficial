@@ -19,6 +19,15 @@
     height: 175px;
   }
 }
+@media only screen and (orientation: landscape) {
+  .mainLanding,
+  .aboutLanding {
+    background-attachment: scroll;
+  }
+  .aboutLanding {
+    background-position: center -20%;
+  }
+}
 @media (min-width: 320px) and (max-width: 425px) {
   .mainLanding,
   .aboutLanding {
