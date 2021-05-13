@@ -19,11 +19,13 @@
     height: 175px;
   }
 }
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) and (orientation: landscape) {
   .mainLanding,
   .aboutLanding {
     background-attachment: scroll;
   }
+}
+@media (min-width: 320px) and (max-width: 425px) {
   .aboutTextWrapper {
     padding: 1.5em 0 3.5em;
     margin-bottom: 20px;
