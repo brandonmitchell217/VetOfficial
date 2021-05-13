@@ -1,11 +1,9 @@
 /********** Everything under 320px **********/
 @media only screen and (max-width: 320px) {
-  .homeLanding {
-    background-position: 40%;
+  .mainLanding,
+  .aboutLanding {
+    background-attachment: scroll;
   }
-  /* .promoWrap {
-    padding: 50px 5px;
-  } */
   .sectionTitle1 img {
     height: 80px;
     width: auto;
@@ -54,9 +52,6 @@
   nav .fullNavList {
     display: flex;
   }
-  .homeLanding {
-    height: 66vh;
-  }
   .promoWrap {
     justify-content: space-evenly;
   }
@@ -96,9 +91,6 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .homeLanding {
-    height: 80vh;
-  }
   .promoWrap {
     justify-content: space-around;
     border: 3px solid rgba(0, 0, 0, 0.76);
@@ -141,10 +133,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .homeLanding {
-    aspect-ratio: 16 / 9;
-    background-position: center 40%;
-  }
   .promoWrap {
     justify-content: space-evenly;
   }
@@ -198,7 +186,7 @@
     transform: rotate(0);
   }
   .contactContent::after {
-    content: "";
+    content: '';
     height: 100%;
     width: 20px;
     position: absolute;
@@ -225,7 +213,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   }
   .contactContent::before {
-    content: "";
+    content: '';
     height: 100%;
     width: 10px;
     position: absolute;
@@ -233,7 +221,7 @@
     background: #dedede;
   }
   .contactContent::after {
-    content: "";
+    content: '';
     height: 100%;
     width: 10px;
     position: absolute;
