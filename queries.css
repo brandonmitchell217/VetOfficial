@@ -192,7 +192,11 @@
     align-items: center;
   }
   .contactRight {
+    width: 85%;
     transform: rotate(0);
+  }
+  .contactRight .contactInner {
+    padding: 2em 0;
   }
   .contactContent::after {
     content: '';
@@ -214,6 +218,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .preloader {
+    flex-direction: column;
+  }
+  .outerBar {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
   .contactRight .contactInner {
     max-width: 685px;
     text-align: center;

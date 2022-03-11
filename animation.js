@@ -8,14 +8,14 @@ const mediaQuery5 = window.matchMedia('(min-width: 768px)')
 
 const timeline1 = gsap.timeline({ defaults: { y: '-100vh' } })
 timeline1
-  .from('.navLogo', { duration: 1 })
+  .from('.navLogo', { duration: 1, delay: 3.05 })
   .from('.fullNavList li', { duration: 0.45, stagger: 0.5 })
 if (mediaQuery5.matches) {
-  gsap.from('.card1', { duration: 4, delay: 3.2, opacity: '0' })
-  gsap.from('.card2', { duration: 4, delay: 3.6, opacity: '0' })
+  gsap.from('.card1', { duration: 4, delay: 3.2, autoAlpha: 0 })
+  gsap.from('.card2', { duration: 4, delay: 3.6, autoAlpha: 0 })
 } else if (mediaQuery4.matches) {
-  gsap.from('.card1', { duration: 4, delay: 1.4, opacity: '0' })
-  gsap.from('.card2', { duration: 4, delay: 1.6, opacity: '0' })
+  gsap.from('.card1', { duration: 4, delay: 1.4, autoAlpha: 0 })
+  gsap.from('.card2', { duration: 4, delay: 1.6, autoAlpha: 0 })
 }
 
 gsap.from('.musicWrap', {
