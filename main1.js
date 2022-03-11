@@ -13,17 +13,17 @@ const mediaQuery3 = window.matchMedia(
 let load = 1
 const loadTime = document.getElementById('loadTime')
 
-document.addEventListener('DOMContentLoaded', () => {
-  gsap.to('.innerBar', { x: 0, duration: 2.75 })
-  gsap.to('.preloader', { autoAlpha: 0, delay: 3, ease: 'power1.in' })
-  setInterval(updateLoad, 30)
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//   gsap.to('.innerBar', { x: 0, duration: 2.75 })
+//   gsap.to('.preloader', { autoAlpha: 0, delay: 3, ease: 'power1.in' })
+//   setInterval(updateLoad, 30)
+// })
 
-function updateLoad() {
-  load += load < 100
-  loadTime.innerHTML = load + '%'
-  document.body.style.overflowY = 'hidden'
-}
+// function updateLoad() {
+//   load += load < 100
+//   loadTime.innerHTML = load + '%'
+//   document.body.style.overflowY = 'hidden'
+// }
 
 burgerOpen.addEventListener('click', () => {
   navList.style.transform = 'translateX(0)'

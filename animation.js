@@ -8,7 +8,7 @@ const mediaQuery5 = window.matchMedia('(min-width: 768px)')
 
 const timeline1 = gsap.timeline({ defaults: { y: '-100vh' } })
 timeline1
-  .from('.navLogo', { duration: 1, delay: 3.05 })
+  .from('.navLogo', { duration: 1 })
   .from('.fullNavList li', { duration: 0.45, stagger: 0.5 })
 if (mediaQuery5.matches) {
   gsap.from('.card1', { duration: 4, delay: 3.2, autoAlpha: 0 })
