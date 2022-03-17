@@ -947,10 +947,14 @@ footer {
   filter: drop-shadow(0 0 2px rgba(222, 222, 222, 0.75));
 }
 
-footer img {
+footer a img {
   height: 75px;
   width: auto;
   margin: 2em 0;
+  transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+footer a img:hover {
+  transform: scale(1.04);
 }
 
 .footerText {
@@ -962,4 +966,13 @@ footer img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.footerText a {
+  transition: all 0.3s ease-in-out;
+}
+
+.footerText a:hover {
+  color: #c2e812;
+  font-size: large;
 }
