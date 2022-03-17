@@ -58,3 +58,11 @@ window.addEventListener('keydown', function (event) {
     burgerOpen.style.display = 'block'
   }
 })
+
+const fkLnk = document.querySelectorAll('.fkLnk')
+
+fkLnk.forEach((lnk) => {
+  lnk.addEventListener('click', (e) => {
+    e.preventDefault()
+  })
+})
