@@ -48,6 +48,13 @@
   .contactWrapper::before {
     height: 90px;
   }
+  .contactRight {
+    width: 100%;
+  }
+  .contactContent::before,
+  .contactContent::after {
+    display: none;
+  }
 }
 /*************** Point when burger menu goes away and full-screen menu appears ***************/
 @media only screen and (min-width: 768px) {
@@ -142,6 +149,9 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .pageContainer {
+    box-shadow: 0 0 50px -10px rgb(222, 222, 222, 0.25);
+  }
   .promoWrap {
     justify-content: space-evenly;
   }
@@ -192,7 +202,7 @@
     align-items: center;
   }
   .contactRight {
-    width: 85%;
+    /* width: 85%; */
     transform: rotate(0);
   }
   .contactRight .contactInner {
